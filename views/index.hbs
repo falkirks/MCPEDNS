@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+{{> header}}
+<body>
+<div class="container" id="stepOne">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h1><span id="serverName" contenteditable="true">yourNameHere</span>.mcpe.me</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="successPanel" style="display: none;">
+        <div class="col-md-12">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <table>
+                    <tr>
+                    <td><i class="fa fa-check" style="font-size: 60pt;"></i></td>
+                    <td style="padding-left: 15px;">
+                        <p class="lead">That hostname is available! Congratulations!</p>
+                        <p>Before continuing with the registration please ensure that you fit into one of the following</p>
+                        <ul>
+                            <li>Owner of a server whose offcial name has a lexicographical distance of 2 or less from the name entered.</li>
+                            <li>Owner of a server that uses the entered name as an acronym or abbreviation for their server.</li>
+                            <li>An authorized representative of one of the above.</li>
+                        </ul>
+                        <p>The mcpe.me namespace is a carefully reviewed one. If your server can't be verified, it will be removed. The following will increase likelihood that your server will be verified successfully</p>
+                        <ul>
+                            <li>Your server doesn't share a name with another well established server.</li>
+                            <li>Your server has a presence in the community (ie: your server is on PocketMine forums and Twitter).</li>
+                            <li>Your server is consistently online. </li>
+                        </ul>
+                        <button type="button" id="startButton" class="btn btn-block btn-default">Continue</button>
+                    </td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="failurePanel" style="display: none;">
+        <div class="col-md-12">
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <table>
+                        <tr>
+                            <td><i class="fa fa-times" style="font-size: 60pt;"></i></td>
+                            <td style="padding-left: 15px;">
+                                <p class="lead">Sorry, That hostname isn't available!</p>
+                                <p>Another user has already claimed this name for their server. If you legitimately own a server that uses the specified name or a name that is very similar (lexicographical distance of less than 2), you may be proceed with registration. You can do so by contacting the site administration at <a href="mailto:me@falkirks.com">me@falkirks.com</a>. Simply provide the name you requested and the IP you want to point it to. You will be requested to do one or more of the following</p>
+                                <ul>
+                                    <li>Tweet a set message to verify ownership of Twitter account.</li>
+                                    <li>Send a PM on the PocketMine forums from your account.</li>
+                                    <li>Install a special verification plugin on your server.</li>
+                                </ul>
+                                <p>After you have verified ownership, we will contact the existing owner of the domain and request similar verification data. We will allow the owner two weeks to provide verification information. Once we have information from both you and the current owner, we will make a decision as to which party would make better use of the domain name. This whole process can take up to a month depending on the scenario.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3><i class="fa fa-tachometer"></i> Faster</h3>
+                </div>
+                <div class="panel-body">
+                    <p>To speed up DNS resolution, your DNS records are hosted with CloudFlare. Also, new registrations are activated instantly, so no waiting around.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3><i class="fa fa-flag"></i> Safer</h3>
+                </div>
+                <div class="panel-body">
+                    <p>mcpe.me is targeted at MCPE servers. This means that usage of the service can be tightly controlled to prevent abuse, such as registering the name of another server. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3><i class="fa fa-gift"></i> Free-er</h3>
+                </div>
+                <div class="panel-body">
+                    <p>mcpe.me provides hostnames that are 100% free, no hidden costs. If you want to donate, that is entirely up to you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" id="stepTwo" style="display: none;">
+    <div class="row">
+        <div class="col-md-12">
+            <form role="form">
+                <label>IP</label>
+                <input type="text" class="form-control">
+                <hr>
+                <label>Your email</label>
+                <input type="text" class="form-control">
+                <hr>
+                <btn type="button"class="btn btn-block btn-primary">Submit registration</btn>
+            </form>
+        </div>
+    </div>
+</div>
+{{> scripts}}
+<script src="app.js"></script>
+</body>
+</html>
