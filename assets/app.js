@@ -31,9 +31,7 @@ $("#stepTwoSubmit").click(function(event){
                     $("#successPanel").fadeOut();
                     $("#stepOne").fadeIn();
                     alertify
-                        .alert("Hostname successfully created!", function(){
-                            //
-                        });
+                        .alert("Hostname successfully created!").set('label', 'Alright!');
                     $("#serverIp").val('');
                     $("#email").val('');
                     $('#recaptcha_reload').click();
