@@ -100,14 +100,16 @@
 <div class="container" id="stepTwo" style="display: none;">
     <div class="row">
         <div class="col-md-12">
-            <form role="form">
+            <form role="form" id="stepTwoForm">
                 <label>IP</label>
-                <input type="text" class="form-control">
+                <input id="serverIp" type="text" class="form-control">
                 <hr>
                 <label>Your email</label>
-                <input type="text" class="form-control">
+                <input id="email" type="text" class="form-control">
                 <hr>
-                <btn type="button"class="btn btn-block btn-primary">Submit registration</btn>
+                {{&captcha}}
+                <hr>
+                <button type="button" id="stepTwoSubmit" class="btn btn-block btn-primary">Submit registration</button>
             </form>
         </div>
     </div>
