@@ -7,7 +7,7 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h1><span id="serverName" contenteditable="true">yourNameHere</span>.mcpe.me</h1>
+                    <h1><span id="serverName" contenteditable="true">yourNameHere</span>{{domain}}</h1>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
                             <li>Owner of a server that uses the entered name as an acronym or abbreviation for their server.</li>
                             <li>An authorized representative of one of the above.</li>
                         </ul>
-                        <p>The mcpe.me namespace is a carefully reviewed one. If your server can't be verified, it will be removed. The following will increase likelihood that your server will be verified successfully</p>
+                        <p>The {{domain}} namespace is a carefully reviewed one. If your server can't be verified, it will be removed. The following will increase likelihood that your server will be verified successfully</p>
                         <ul>
                             <li>Your server doesn't share a name with another well established server.</li>
                             <li>Your server has a presence in the community (ie: your server is on PocketMine forums and Twitter).</li>
@@ -81,7 +81,7 @@
                     <h3><i class="fa fa-flag"></i> Safer</h3>
                 </div>
                 <div class="panel-body">
-                    <p>mcpe.me is targeted at MCPE servers. This means that usage of the service can be tightly controlled to prevent abuse, such as registering the name of another server. </p>
+                    <p>{{domain}} is targeted at MCPE servers. This means that usage of the service can be tightly controlled to prevent abuse, such as registering the name of another server. </p>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
                     <h3><i class="fa fa-gift"></i> Free-er</h3>
                 </div>
                 <div class="panel-body">
-                    <p>mcpe.me provides hostnames that are 100% free, no hidden costs. If you want to donate, that is entirely up to you.</p>
+                    <p>{{domain}} provides hostnames that are 100% free, no hidden costs. If you want to donate, that is entirely up to you.</p>
                 </div>
             </div>
         </div>
@@ -115,6 +115,9 @@
     </div>
 </div>
 {{> scripts}}
+<script>
+    alertify.defaults.glossary.title = "{{domain}}";
+</script>
 <script src="app.js"></script>
 </body>
 </html>

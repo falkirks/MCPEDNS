@@ -1,4 +1,3 @@
-alertify.defaults.glossary.title = "mcpe.me";
 $("#serverName").on("input", function(event){
     var name = $(this).html();
     if(name.length >= 3) {

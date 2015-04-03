@@ -52,7 +52,7 @@ MongoClient.connect(process.env.MONGOLAB_URI || "mongodb://127.0.0.1:27017/test"
 
     app.get('/', function (req, res) {
         var recaptcha = new Recaptcha(process.env.CAPTCHA_PUBLIC, process.env.CAPTCHA_SECRET);
-        res.render('index', {captcha: recaptcha.toHTML()});
+        res.render('index', {captcha: recaptcha.toHTML(), domain: process.env.CLOUDFLARE_DOMAIN});
     });
     app.get('/api/isUsed/:name', function (req, res) {
         if (req.params.name != null) {
