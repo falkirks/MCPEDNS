@@ -25,7 +25,7 @@ $("#stepTwoSubmit").click(function(event){
                     alertify.message(data.message);
                 }
                 else{
-                    $("#serverName").html("yourNameHere");
+                    $("#serverName").html("[enter your name here]");
                     $("#stepTwo").fadeOut();
                     $("#successPanel").fadeOut();
                     $("#stepOne").fadeIn();
