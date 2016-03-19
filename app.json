@@ -1,0 +1,7 @@
+{
+  "name":MCPEDNS",
+  "description": "A simple, in PHP written, Generator of Minecraft Achievements for your website or blog.",
+  "repository": "https://github.com/KairusDarkSeeker/MCPEDNS",
+  "logo": "https://raw.githubusercontent.com/MarvinMenzerath/MinecraftAchievementGenerator/master/css/favicon.png",
+  "keywords": ["PHP", "Minecraft PE", "DNS"]
+}
